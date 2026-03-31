@@ -550,111 +550,68 @@ body {
     font-size: 0.95rem;
   }
 }
-/* ================= ANIMATIONS FORMATION ================= */
+/* ================= FORMATION SIMPLE ================= */
 
-.formation-page .timeline-card,
-.formation-page .formation-info-card {
-  opacity: 0;
-  transform: translateY(35px);
-  animation: formationFadeUp 0.9s ease forwards;
+.formation-page .formation-simple {
+  padding: 60px 10%;
 }
 
-.formation-page .timeline-card:nth-child(1) {
-  animation-delay: 0.15s;
+/* Liste principale */
+.formation-page .formation-list {
+  list-style: none;
+  max-width: 800px;
 }
 
-.formation-page .timeline-card:nth-child(2) {
-  animation-delay: 0.35s;
+/* Chaque ligne */
+.formation-page .formation-list li {
+  font-size: 1.2rem;
+  margin-bottom: 22px;
+  color: #333;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 22px;
+  transition: 0.3s ease;
 }
 
-.formation-page .timeline-card:nth-child(3) {
-  animation-delay: 0.55s;
-}
-
-.formation-page .formation-info-card:nth-child(1) {
-  animation-delay: 0.2s;
-}
-
-.formation-page .formation-info-card:nth-child(2) {
-  animation-delay: 0.35s;
-}
-
-.formation-page .formation-info-card:nth-child(3) {
-  animation-delay: 0.5s;
-}
-
-.formation-page .formation-info-card:nth-child(4) {
-  animation-delay: 0.65s;
-}
-
-.formation-page .timeline-card::after {
-  content: "";
+/* Petit point à gauche */
+.formation-page .formation-list li::before {
+  content: "•";
   position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(236, 72, 153, 0.05));
-  opacity: 0;
-  transition: opacity 0.35s ease;
-  pointer-events: none;
+  left: 0;
+  top: 0;
+  color: #007bff;
+  font-size: 1.5rem;
 }
 
-.formation-page .timeline-card:hover::after {
-  opacity: 1;
+/* Année */
+.formation-page .year {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #111;
 }
 
-.formation-page .timeline-card:hover .timeline-date {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(139, 92, 246, 0.18);
+/* Nom école */
+.formation-page strong {
+  color: #007bff;
 }
 
-.formation-page .timeline-date {
-  transition: 0.3s ease;
+/* Effet au hover */
+.formation-page .formation-list li:hover {
+  transform: translateX(6px);
+  color: #007bff;
 }
 
-.formation-page .module-tags span {
-  transition: 0.3s ease;
-}
-
-.formation-page .module-tags span:hover {
-  transform: translateY(-2px);
-  border-color: rgba(236, 72, 153, 0.35);
-  color: #ffffff;
-}
-
-.formation-page .formation-info-card:hover .icon {
-  transform: scale(1.08) rotate(-4deg);
-}
-
-.formation-page .formation-info-card .icon {
-  transition: transform 0.3s ease;
-}
-
-.formation-page .timeline::before {
-  animation: timelineGlow 2.2s ease-in-out infinite;
-}
-
-@keyframes formationFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(35px);
+/* Responsive */
+@media (max-width: 768px) {
+  .formation-page .formation-simple {
+    padding: 40px 5%;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes timelineGlow {
-  0% {
-    box-shadow: 0 0 0 rgba(139, 92, 246, 0);
-    opacity: 0.75;
+  .formation-page .formation-list li {
+    font-size: 1rem;
   }
-  50% {
-    box-shadow: 0 0 16px rgba(139, 92, 246, 0.35);
-    opacity: 1;
-  }
-  100% {
-    box-shadow: 0 0 0 rgba(139, 92, 246, 0);
-    opacity: 0.75;
+
+  .formation-page .year {
+    font-size: 1.1rem;
   }
 }
