@@ -2,8 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadissetou KOITA | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNMV1EVS3"></script>
@@ -15,74 +21,168 @@
   </script>
 </head>
 <body>
-  <header>
-    <h1>Kadissetou KOITA</h1>
-    <nav>
-      <a href="index.html">Accueil</a>
+
+  <header class="header">
+    <div class="logo">
+      <h1>Kadissetou KOITA</h1>
+      <p>Business Analyst • Data Analyst • Data Engineer</p>
+    </div>
+
+    <nav class="navbar">
+      <a href="index.html" class="active">Accueil</a>
       <a href="competences.html">Compétences</a>
       <a href="experiences.html">Expériences</a>
       <a href="formation.html">Formation</a>
       <a href="projets_realises.html">Projets</a>
       <a href="certifications.html">Certifications</a>
-       <a href="recommandations.html">Recommandations</a> |
-     
-      <a href="contact.html">Contact</a>
+      <a href="recommandations.html">Recommandations</a>
+      <a href="contact.html" class="btn-nav">Contact</a>
     </nav>
   </header>
 
   <main>
-    <!-- Section Bienvenue avec photo à droite -->
-    <section class="project bienvenue-section">
-      <div class="bienvenue-wrapper">
-        <h2 class="bienvenue-titre">Bienvenue sur mon portfolio</h2>
-       
 
+    <!-- HERO -->
+    <section class="hero reveal">
+      <div class="hero-text">
+        <span class="badge">Portfolio professionnel</span>
+        <h2>Transformer les données en décisions utiles, claires et impactantes.</h2>
+        <p>
+          Diplômée en Data Science et orientée analyse métier, je conçois des dashboards, 
+          des analyses et des solutions data qui aident les entreprises à mieux comprendre 
+          leur activité, piloter leur performance et prendre de meilleures décisions.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="projets_realises.html" class="btn-primary">Voir mes projets</a>
+          <a href="contact.html" class="btn-secondary">Me contacter</a>
+        </div>
       </div>
-    </section>
 
-    <!-- Section À propos de moi -->
-    <section class="MOI">
-      <h2>À propos de moi</h2>
-      <div class="moi-section">
-        <div class="moi-texte">
-          <p>
-            Je suis un passionné de science des données : j’adore plonger dans des jeux de données, dénicher des tendances cachées et les transformer en décisions concrètes.
-            Curieux de nature, je ne me contente jamais de la première réponse ; je veux comprendre le « pourquoi » et le « comment », puis mettre mes découvertes au service de projets qui ont du sens.
-          </p>
-
-          <p>Chez AREP et MANE FILS, comme durant mon parcours académique, j’ai appris à :</p>
-
+      <div class="hero-card">
+        <div class="glass-card">
+          <h3>Ce que je fais</h3>
           <ul>
-            <li>M’adapter vite et travailler en autonomie. Qu’il s’agisse de coder un plugin Revit en Python, SQL ou de bâtir un dashboard Power BI, je prends le temps de comprendre le besoin… puis je fonce.</li>
-            <li>Explorer chaque problème avec rigueur. Mes tuteurs disent de moi que je vais « jusqu’au bout des choses » : j’aime transformer des idées floues en solutions concrètes et mesurables.</li>
-            <li>Jouer collectif. Partager, écouter, co-construire… c’est là que la magie opère, surtout dans les environnements exigeants où chaque voix compte.</li>
-            <li>Apprendre en continu. L’IA, la data-viz, l’optimisation environnementale : je me forme, je teste, j’itère. Parce qu’il n’y a rien de plus motivant que de voir ses compétences évoluer au fil des projets.</li>
+            <li>Analyse et interprétation de données</li>
+            <li>Création de dashboards interactifs</li>
+            <li>Automatisation et transformation de données</li>
+            <li>Visualisation et suivi KPI</li>
+            <li>Support à la décision business</li>
           </ul>
-
-          <p><strong>Mon objectif :<h2><stron> contribuer à des initiatives utiles, durables et innovantes — et y apporter toute mon énergie, ma créativité et ma rigueur</stron></h2></p>
         </div>
       </div>
     </section>
 
-    <!-- Section sur le site -->
-    <section class="site-info">
-      <h2><stron>À propos de ce site</stron></h2>
-      <p>
-        Ce portfolio a été entièrement conçu et développé par moi-même. J’ai mis à profit mes compétences en développement web pour créer un site moderne, responsive et fonctionnel.
-      </p>
-      <p>Pour le construire, j’ai utilisé :</p>
-      <ul class="tech-list">
-        <li>HTML, CSS et JavaScript pour la structure, le design et les animations.</li>
-        <li>GitHub pour l’hébergement via GitHub Pages.</li>
-        <li>Google Analytics pour suivre les visites et comprendre le comportement des utilisateurs.</li>
-        <li>Formspree pour permettre l’envoi de messages via le formulaire de contact.</li>
-      </ul>
-      <p>Ce site reflète non seulement mes compétences techniques, mais aussi ma capacité à mener un projet de bout en bout — de la conception à la mise en ligne.</p>
+    <!-- A PROPOS -->
+    <section class="section reveal">
+      <div class="section-title">
+        <span>À propos</span>
+        <h2>Qui suis-je ?</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card large-card">
+          <p>
+            Je suis passionnée par la donnée, l’analyse et la création de solutions concrètes 
+            à partir d’informations complexes. J’aime explorer les données, comprendre les besoins 
+            métier, structurer l’information et construire des livrables utiles, lisibles et actionnables.
+          </p>
+
+          <p>
+            Mon parcours m’a permis de développer une approche à la fois analytique, rigoureuse 
+            et orientée résultat. Que ce soit sur des tableaux de bord, des traitements de données 
+            ou des analyses métier, je cherche toujours à produire un travail clair, fiable et à forte valeur ajoutée.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Mes points forts</h3>
+          <ul>
+            <li>Autonomie et adaptation rapide</li>
+            <li>Rigueur analytique</li>
+            <li>Esprit de synthèse</li>
+            <li>Curiosité et apprentissage continu</li>
+            <li>Travail d’équipe et communication claire</li>
+          </ul>
+        </div>
+      </div>
     </section>
+
+    <!-- VALEUR -->
+    <section class="section reveal">
+      <div class="section-title">
+        <span>Ma valeur</span>
+        <h2>Ce que j’apporte</h2>
+      </div>
+
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="icon">📊</div>
+          <h3>Analyse</h3>
+          <p>Identifier les tendances, anomalies et opportunités à partir des données.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">📈</div>
+          <h3>Visualisation</h3>
+          <p>Créer des dashboards clairs, élégants et utiles pour le pilotage.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">⚙️</div>
+          <h3>Structuration</h3>
+          <p>Organiser et transformer les données pour les rendre exploitables.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="icon">💡</div>
+          <h3>Impact métier</h3>
+          <p>Relier l’analyse data aux enjeux réels de l’entreprise et des utilisateurs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SITE -->
+    <section class="section reveal">
+      <div class="section-title">
+        <span>Le portfolio</span>
+        <h2>À propos de ce site</h2>
+      </div>
+
+      <div class="site-box">
+        <p>
+          Ce portfolio a été pensé comme une vitrine professionnelle moderne, afin de refléter 
+          à la fois mon univers, mes compétences et ma manière de travailler.  
+          Je l’ai conçu pour offrir une navigation fluide, une identité visuelle soignée et une 
+          présentation claire de mon parcours.
+        </p>
+
+        <div class="tech-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>GitHub Pages</span>
+          <span>Google Analytics</span>
+          <span>Formspree</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta reveal">
+      <h2>Vous cherchez un profil analytique, rigoureux et motivé ?</h2>
+      <p>
+        Je serais ravie d’échanger avec vous sur une opportunité, un projet ou une collaboration.
+      </p>
+      <a href="contact.html" class="btn-primary">Entrer en contact</a>
+    </section>
+
   </main>
 
-  <footer>
-    <p>Kadissetou KOITA – BUSINESS ANALYST / DATA ANALYST / DATA ENGINEER</p>
+  <footer class="footer">
+    <p>© 2026 Kadissetou KOITA — Portfolio professionnel</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
