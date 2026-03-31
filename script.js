@@ -69,18 +69,3 @@ if (document.body.classList.contains('contact-page')) {
     });
   }
 }
-
-/* ================= FORMATION PAGE ================= */
-
-if (document.body.classList.contains('formation-page')) {
-  const timelineCards = document.querySelectorAll('.timeline-card');
-  const formationCards = document.querySelectorAll('.formation-info-card');
-
-  timelineCards.forEach((card, index) => {
-    card.style.transitionDelay = `${index * 0.15}s`;
-  });
-
-  formationCards.forEach((card, index) => {
-    card.style.transitionDelay = `${index * 0.12}s`;
-  });
-}
