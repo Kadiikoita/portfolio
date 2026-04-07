@@ -4,56 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formation | Kadissetou KOITA</title>
-
   <link rel="stylesheet" href="style.css">
-</head>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNMV1EVS3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VDNMV1EVS3');
+  </script>
+</head>
 <body class="formation-page">
 
-  <header>
-    <h1>Formation</h1>
+  <header class="header">
+    <div class="logo">
+      <h1>Kadissetou KOITA</h1>
+      <p>Business Analyst • Data Analyst • Data Engineer</p>
+    </div>
 
-    <nav>
+    <nav class="navbar">
       <a href="index.html">Accueil</a>
       <a href="competences.html">Compétences</a>
       <a href="experiences.html">Expériences</a>
-      <a href="formation.html">Formation</a>
+      <a href="formation.html" class="active">Formation</a>
       <a href="projets_realises.html">Projets</a>
       <a href="certifications.html">Certifications</a>
       <a href="recommandations.html">Recommandations</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn-nav">Contact</a>
     </nav>
   </header>
 
-  <main class="formation-simple">
+  <main class="formation-main">
+    <section class="formation-hero reveal">
+      <span class="badge">Parcours académique</span>
+      <h2>Formation</h2>
+      <p>
+        Mon parcours académique s’inscrit dans une spécialisation progressive en data,
+        analyse et intelligence artificielle.
+      </p>
+    </section>
 
-    <ul class="formation-list">
+    <section class="formation-cards reveal">
+      <article class="formation-card">
+        <span class="formation-year">2024 - 2025</span>
+        <h3>Master 2 Chef de projet Data et IA</h3>
+        <p>Nexa Digital School (ex IA School)</p>
+      </article>
 
-      <li>
-        <span class="year">2024 - 2025</span> :
-        Master 2 Chef de projet Data et IA – 
-        <strong>Nexa Digital School (ex IA School)</strong>
-      </li>
+      <article class="formation-card">
+        <span class="formation-year">2023 - 2024</span>
+        <h3>Master 1 Data Science</h3>
+        <p>IA School</p>
+      </article>
 
-      <li>
-        <span class="year">2023 - 2024</span> :
-        Master 1 Data Science – 
-        <strong>IA School</strong>
-      </li>
-
-      <li>
-        <span class="year">2020 - 2023</span> :
-        Bachelor 3 – 
-        <strong>IA School</strong>
-      </li>
-
-    </ul>
-
+      <article class="formation-card">
+        <span class="formation-year">2020 - 2023</span>
+        <h3>Bachelor 3</h3>
+        <p>IA School</p>
+      </article>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2026 Kadissetou KOITA</p>
+  <footer class="footer">
+    <p>© 2026 Kadissetou KOITA — Portfolio professionnel</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
