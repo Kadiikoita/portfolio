@@ -2,11 +2,14 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Expériences</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expériences | Kadissetou KOITA</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Google tag (gtag.js) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNMV1EVS3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -15,82 +18,79 @@
     gtag('config', 'G-VDNMV1EVS3');
   </script>
 </head>
-<body>
-  <header>
-    <h1>Mes Expériences</h1>
-    <nav>
+<body class="experiences-page">
+
+  <header class="header">
+    <div class="logo">
+      <h1>Kadissetou KOITA</h1>
+      <p>Business Analyst • Data Analyst • Data Engineer</p>
+    </div>
+
+    <nav class="navbar">
       <a href="index.html">Accueil</a>
       <a href="competences.html">Compétences</a>
-      <a href="experiences.html">Expériences</a>
+      <a href="experiences.html" class="active">Expériences</a>
       <a href="formation.html">Formation</a>
       <a href="projets_realises.html">Projets</a>
       <a href="certifications.html">Certifications</a>
-      <a href="recommandations.html">Recommandations</a> |
-      <a href="contact.html">Contact</a>
+      <a href="recommandations.html">Recommandations</a>
+      <a href="contact.html" class="btn-nav">Contact</a>
     </nav>
   </header>
-  <main>
-    <section class="project fade-scroll">
-      <h2>
-        <img src="data:image/webp;base64,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" alt="Logo AREP" style="height:40px; vertical-align:middle; margin-right:8px;">
-        chez AREP – Groupe SNCF, Paris (09/2024 – 09/2025)
-      </h2>
-      <p>
-        <strong>Application carbone (Revit + Python) – Écoconception :</strong><br>
-        Développement d'une application sur Revit intégrant un script Python pour calculer automatiquement
-        l'empreinte carbone des éléments de construction,
-        Mise en place de Dashboard via Power Bl et Dash (Python) pour analyser l'empreinte carbone et fournir
-        des outils d'aide à la décision pour les concepteurs dans le choix des matériaux
-        Création d'une IA basée sur ChatGPT et OpenAl capable de télécharger, lire, résumer et interroger des
-        fichiers PDF, afin d'optimiser la recherche et la compréhension documentaire.
-        Automatisation de tâches analytiques générant un gain de productivité de 30 %.
-      </p>
-      <p>
-        <strong>Visualisation des données (Power BI / Dash) – Analyse :</strong><br>
-        Conception de tableaux de bord interactifs avec Power BI et Dash (Python) pour analyser les résultats, suivre l’évolution des indicateurs carbone, et fournir des outils d’aide à la décision aux concepteurs.
-      </p>
-    </section>
 
-    <section class="project">
-      <h2>
-        <img src="https://th.bing.com/th/id/OIP.0STNLW49q_zIXDdVtQmVFgAAAA?w=275&h=141&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Logo MANE" style="height:40px; vertical-align:middle; margin-right:8px;">
-        chez MANE FILS, Nice (04/2022 – 08/2022)
-      </h2>
-      <p>
-        <strong>Optimisation de la performance commerciale :</strong><br>
-        Développement d'un outil Power Bl pour piloter la performance commerciale.
-        Amélioration des outils de tableaux de bord Excel & Power Bl existants
-        Analyse de données SQL et intégration aux reportings décisionnels.
-        Adaptation des algorithmes de machine learning pour prédire les résultats de production d'arômes
-      </p>
-      <p>
-        <strong>Activités réalisées :</strong><br>
-        Modélisation en Machine Learning avec Python et R, conception de dashboards sous Power BI, et animation de sessions de formation à Power BI en interne.
-      </p>
+  <main class="experiences-main">
+    <section class="experiences-cards reveal">
+
+      <article class="experience-card">
+        <span class="experience-date">oct. 2024 – fév. 2025</span>
+        <h3>Data Scientist</h3>
+        <h4>GoVoyage</h4>
+        <p class="experience-intro">Freelance en support aux équipes data et opérations.</p>
+        <ul>
+          <li>Développement de modèles prédictifs en Python, permettant de réduire jusqu’à 70 % les incidents opérationnels et les délais de résolution.</li>
+          <li>Conception de dashboards Power BI pour le suivi des alertes en temps réel et l’accélération de la prise de décision des équipes opérationnelles.</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <span class="experience-date">avr. 2024 – sept. 2025</span>
+        <h3>Data Analyst & Consultante Data</h3>
+        <h4>Hanalytics</h4>
+        <ul>
+          <li>Accompagnement de clients e-commerce, retail et tourisme dans la structuration et l’exploitation de leurs données marketing et CRM.</li>
+          <li>Modélisation des données sous BigQuery (SQL) et fiabilisation des KPI pour le pilotage opérationnel des équipes marketing.</li>
+          <li>Création de dashboards multi-sources dans Looker Studio, contribuant à une hausse pouvant atteindre +30 % du taux de conversion sur un site e-commerce.</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <span class="experience-date">sept. 2023 – sept. 2024</span>
+        <h3>Product Owner</h3>
+        <h4>Banque ARB</h4>
+        <p class="experience-intro">Freelance le week-end sur un produit Data Marketing pour une nouvelle banque en ligne.</p>
+        <ul>
+          <li>Pilotage de la centralisation et de l’automatisation de l’accès aux données afin de garantir une vision fiable des performances business.</li>
+          <li>Supervision des flux Airbyte, dbt et BigQuery, ainsi que de la centralisation des données issues de GA4, CRM et Shopify pour fiabiliser les KPI utilisés par la direction.</li>
+        </ul>
+      </article>
+
+      <article class="experience-card">
+        <span class="experience-date">janv. 2022 – mai 2023</span>
+        <h3>Data Analyst / Téléopératrice</h3>
+        <h4>Orange</h4>
+        <ul>
+          <li>Collaboration avec l’équipe data pour contrôler des campagnes publicitaires multi-canaux, détecter les non-conformités et contribuer à la récupération de plusieurs milliers d’euros de budget média.</li>
+          <li>Structuration des données publicitaires sous MySQL afin d’améliorer la traçabilité et la fiabilité des KPI marketing 2022-2023 pour le pilotage des campagnes.</li>
+        </ul>
+      </article>
+
     </section>
   </main>
-  <footer>
-    <p>Souleymane Daffe – DATA SCIENTIST / ANALYST / DEV IA</p>
+
+  <footer class="footer">
+    <p>© 2026 Kadissetou KOITA — Portfolio professionnel</p>
   </footer>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const fadeElements = document.querySelectorAll(".fade-scroll");
-
-    const onScroll = () => {
-      fadeElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100 && !el.classList.contains("visible")) {
-          el.classList.add("visible");
-        }
-      });
-    };
-
-    window.addEventListener("scroll", onScroll);
-    onScroll(); // affichage initial
-  });
-</script>
-
- 
+  <script src="script.js"></script>
 </body>
 </html>
