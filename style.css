@@ -550,68 +550,111 @@ body {
     font-size: 0.95rem;
   }
 }
-/* ================= FORMATION SIMPLE ================= */
+/* ================= FORMATION PAGE ================= */
 
-.formation-page .formation-simple {
-  padding: 60px 10%;
+.formation-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Liste principale */
-.formation-page .formation-list {
-  list-style: none;
-  max-width: 800px;
+.formation-page .formation-main {
+  flex: 1;
+  padding: 70px 8% 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Chaque ligne */
-.formation-page .formation-list li {
-  font-size: 1.2rem;
-  margin-bottom: 22px;
-  color: #333;
-  line-height: 1.6;
-  position: relative;
-  padding-left: 22px;
-  transition: 0.3s ease;
+.formation-page .formation-hero {
+  max-width: 760px;
+  margin: 0 auto 40px;
+  text-align: center;
 }
 
-/* Petit point à gauche */
-.formation-page .formation-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #007bff;
-  font-size: 1.5rem;
+.formation-page .formation-hero h2 {
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
-/* Année */
-.formation-page .year {
-  font-weight: bold;
-  font-size: 1.25rem;
-  color: #111;
+.formation-page .formation-hero p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
 }
 
-/* Nom école */
-.formation-page strong {
-  color: #007bff;
+.formation-page .formation-cards {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 24px;
 }
 
-/* Effet au hover */
-.formation-page .formation-list li:hover {
-  transform: translateX(6px);
-  color: #007bff;
+.formation-page .formation-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 22px;
+  padding: 28px 30px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.18);
+  transition: 0.35s ease;
+  text-align: left;
 }
 
-/* Responsive */
+.formation-page .formation-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(236, 72, 153, 0.35);
+}
+
+.formation-page .formation-year {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(139, 92, 246, 0.14);
+  color: #e9d5ff;
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.formation-page .formation-card h3 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.formation-page .formation-card p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Footer bien centré */
+.formation-page .footer,
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
-  .formation-page .formation-simple {
-    padding: 40px 5%;
+  .formation-page .formation-main {
+    padding: 50px 5% 70px;
   }
 
-  .formation-page .formation-list li {
-    font-size: 1rem;
+  .formation-page .formation-hero h2 {
+    font-size: 2.1rem;
   }
 
-  .formation-page .year {
-    font-size: 1.1rem;
+  .formation-page .formation-card {
+    padding: 22px;
+  }
+
+  .formation-page .formation-card h3 {
+    font-size: 1.15rem;
   }
 }
