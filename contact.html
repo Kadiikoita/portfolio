@@ -7,68 +7,102 @@
 
   <link rel="stylesheet" href="style.css">
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body class="contact-page">
 
-  <div class="contact-container">
-    <h1>Contactez-moi</h1>
-
-    <p>
-      Vous avez une opportunité, un projet ou une question ?
-      Je serais ravie d’échanger avec vous.
-    </p>
-
-    <form class="contact-form" action="#" method="POST">
-      <div class="form-group">
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" placeholder="Votre nom" required>
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
-      </div>
-
-      <div class="form-group">
-        <label for="subject">Sujet</label>
-        <input type="text" id="subject" name="subject" placeholder="Sujet du message" required>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
-      </div>
-
-      <button type="submit" class="btn-submit">Envoyer</button>
-    </form>
-
-    <div class="contact-info">
-      <p>
-        Email :
-        <a href="mailto:koita.kadissetou@gmail.com">
-          koita.kadissetou@gmail.com
-        </a>
-      </p>
-
-      <p>
-        LinkedIn :
-        <a href="http://linkedin.com/in/kadissetou-koita-6a1601159" target="_blank">
-          Voir mon profil LinkedIn
-        </a>
-      </p>
-
-      <p>
-        GitHub :
-        <a href="#" target="_blank">
-          Voir mon GitHub
-        </a>
-      </p>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">
+      <h1>Kadissetou KOITA</h1>
+      <p>Business Analyst • Data Analyst • Data Viz</p>
     </div>
-  </div>
+
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="formation.html">Formation</a>
+      <a href="projets_realises.html">Projets</a>
+      <a href="recommandations.html">Recommandations</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="contact-main">
+
+    <div class="contact-container">
+
+      <h1>Contactez-moi</h1>
+
+      <p>
+        Vous avez une opportunité, un projet ou une question ?
+        Je serais ravie d’échanger avec vous.
+      </p>
+
+      <!-- FORMULAIRE -->
+      <form class="contact-form" action="#" method="POST">
+
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Sujet</label>
+          <input type="text" id="subject" name="subject" placeholder="Sujet du message" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Écrivez votre message ici..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          Envoyer
+        </button>
+
+      </form>
+
+      <!-- INFOS -->
+      <div class="contact-info">
+
+        <p>
+          Email :
+          <a href="mailto:koita.kadissetou@gmail.com">
+            koita.kadissetou@gmail.com
+          </a>
+        </p>
+
+        <p>
+          LinkedIn :
+          <a href="http://linkedin.com/in/kadissetou-koita-6a1601159" target="_blank">
+            Voir mon profil LinkedIn
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Kadissetou KOITA — Portfolio professionnel</p>
+  </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
