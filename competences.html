@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets Réalisés</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNMV1EVS3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VDNMV1EVS3');
+</script>
+</head>
+<body>
+  <header>
+    <h1>Projets Réalisés</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="formation.html">Formation</a>
+      <a href="projets_realises.html">Projets</a>
+      <a href="certifications.html">Certifications</a>
+        <a href="recommandations.html">Recommandations</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+
+<section class="competences fade-scroll">
+  <h2><i class="fas fa-code"></i> Compétences techniques</h2>
+
+  <p><strong><i class="fas fa-terminal"></i> Langages de programmation :</strong> Python, R, SQL (avancé), NoSQL, Java, C, C++, C#, UML, VBA</p>
+
+  <p><strong><i class="fas fa-chart-line"></i> Analyse & Data Science :</strong> 
+    Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, TensorFlow, Transformers, R Shiny, Dash, Streamlit, SAS, Excel Avancé, dashboard Formspree, Power BI, SQL Server, Google Analytics
+  </p>
+
+  <p><strong><i class="fas fa-brain"></i> Machine Learning & IA :</strong>
+    Apprentissage supervisé, non supervisé, par renforcement, par transfert, Deep Learning, NLP, BERT, GPT, LLM, évaluation (précision, F1-score, ROC, validation croisée), sélection de modèles, algorithmes avancés<br>
+    <span class="sous-titre">Régression :</span> Régression linéaire, polynomiale, Ridge, Lasso, ElasticNet<br>
+    <span class="sous-titre">Classification :</span> k-NN, SVM, Naive Bayes, Logistic Regression, Decision Trees, Random Forest, XGBoost, LightGBM, CatBoost
+  </p>
+
+  <p><strong><i class="fas fa-database"></i> Base de données & Big Data :</strong>
+    MySQL, NoSQL (avancé), Hive, Hadoop, Pig, requêtes SQL avancées, data mining
+  </p>
+
+  <p><strong><i class="fas fa-chart-pie"></i> Outils BI & Visualisation :</strong>
+    Power BI, Tableau, QlikView, Dash, Streamlit, création de dashboards interactifs
+  </p>
+
+  <p><strong><i class="fas fa-code-branch"></i> Programmation & Développement :</strong>
+    Packages R, déploiement Dash, scrapping (BeautifulSoup), GitHub, GitLab, Excel/VBA
+  </p>
+
+  <p><strong><i class="fas fa-square-root-alt"></i> Mathématiques appliquées :</strong>
+    Statistiques, régression, optimisation, probabilités, ANOVA, théorie des graphes
+  </p>
+
+  <p><strong><i class="fas fa-network-wired"></i> Informatique & Systèmes :</strong>
+    OS, réseaux, cybersécurité, décisionnel, IoT (Internet des objets)
+  </p>
+
+  <p><strong><i class="fas fa-lightbulb"></i> Soft Skills & Management :</strong>
+    Esprit analytique, sélection de modèles, marketing stratégique, droit, management
+  </p>
+
+  <p><strong><i class="fas fa-certificate"></i> Projets & Certifications :</strong>
+    Projet Data Science (Python, R ou SAS), certification ML, déploiement en production
+  </p>
+</section>
+
+
+    </main>
+  <footer>
+    <p>Souleymane Daffe  DATA SCIENTIS/ANALYST/DEV IA</p>
+  </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeElements = document.querySelectorAll(".fade-scroll");
+
+    const onScroll = () => {
+      fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100 && !el.classList.contains("visible")) {
+          el.classList.add("visible");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", onScroll);
+    onScroll(); // appel initial
+  });
+</script>
+
+
+</body>
+</html>
