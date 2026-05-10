@@ -972,18 +972,65 @@ body {
 .recommendations-intro {
   text-align: center;
   max-width: 850px;
-  margin: 0 auto 50px;
+  margin: 0 auto 60px;
 }
 
 .recommendations-intro h2 {
   font-size: 2.7rem;
-  margin: 18px 0;
-  color: white;
+  color: #ffffff;
+  margin: 16px 0;
 }
 
 .recommendations-intro p {
   color: #cbd5e1;
   line-height: 1.8;
+}
+
+.documents-section {
+  margin-bottom: 60px;
+}
+
+.documents-section h3 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.documents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.document-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  text-decoration: none;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 22px;
+  transition: 0.35s ease;
+}
+
+.document-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(236,72,153,0.4);
+}
+
+.document-card span {
+  font-size: 2rem;
+}
+
+.document-card h4 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.document-card p {
+  color: #cbd5e1;
+  font-size: 0.92rem;
 }
 
 .recommendations-grid {
@@ -1018,13 +1065,13 @@ body {
   height: 78px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid rgba(255,255,255,0.15);
+  border: 3px solid rgba(255,255,255,0.12);
 }
 
 .recommendation-top h3 {
   color: white;
   font-size: 1.2rem;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .recommendation-top h4 {
@@ -1036,20 +1083,36 @@ body {
 .recommendation-card p {
   color: #dbeafe;
   line-height: 1.8;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .recommendation-btn {
   display: inline-block;
-  padding: 13px 22px;
-  border-radius: 14px;
+  text-decoration: none;
   background: linear-gradient(135deg, #8b5cf6, #ec4899);
   color: white;
-  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: 14px;
   font-weight: 600;
   transition: 0.3s ease;
 }
 
 .recommendation-btn:hover {
   transform: translateY(-3px);
+}
+
+@media (max-width: 700px) {
+
+  .recommendations-main {
+    padding: 50px 5%;
+  }
+
+  .recommendations-intro h2 {
+    font-size: 2rem;
+  }
+
+  .recommendation-card {
+    padding: 24px;
+  }
+
 }
