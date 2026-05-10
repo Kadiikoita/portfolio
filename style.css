@@ -1240,3 +1240,45 @@ body.light-mode .footer {
   color: #475569;
   border-top: 1px solid rgba(15, 23, 42, 0.08);
 }
+
+/* ================= FIX LIGHT MODE CONTRAST ================= */
+
+body.light-mode .badge,
+body.light-mode .formation-year,
+body.light-mode .experience-date,
+body.light-mode .competence-tags span,
+body.light-mode .project-tags span,
+body.light-mode .tech-tags span {
+  background: rgba(139, 92, 246, 0.16);
+  color: #6d28d9;
+  border: 1px solid rgba(139, 92, 246, 0.28);
+}
+
+body.light-mode .glass-card ul,
+body.light-mode .glass-card li {
+  color: #334155;
+}
+
+body.light-mode .glass-card h3 {
+  color: #0f172a;
+}
+
+body.light-mode .section-title span,
+body.light-mode .experience-card h4,
+body.light-mode .recommendation-top h4 {
+  color: #7c3aed;
+}
+
+body.light-mode .contact-info,
+body.light-mode .contact-info p {
+  color: #334155;
+}
+
+body.light-mode .contact-info a {
+  color: #7c3aed;
+}
+
+body.light-mode .theme-toggle {
+  background: rgba(139, 92, 246, 0.12);
+  color: #7c3aed;
+}
