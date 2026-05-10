@@ -1,78 +1,128 @@
-<section class="recommendations-grid reveal">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommandations | Kadissetou KOITA</title>
 
-  <!-- HANALYTICS -->
-  <article class="recommendation-card">
+  <link rel="stylesheet" href="style.css">
 
-    <div class="recommendation-top">
-      <img src="images/hanalytics.jpg" alt="Hanalytics">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-      <div>
-        <h3>Hanalytics</h3>
-        <h4>Data & Business Intelligence</h4>
-      </div>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VDNMV1EVS3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VDNMV1EVS3');
+  </script>
+</head>
+
+<body class="recommendations-page">
+
+  <header class="header">
+    <div class="logo">
+      <h1>Kadissetou KOITA</h1>
+      <p>Recommandations Professionnelles</p>
     </div>
 
-    <p>
-      Recommandation professionnelle autour des missions en analyse de données,
-      reporting automatisé, BigQuery, Looker Studio et suivi des KPI business.
-    </p>
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="competences.html">Compétences</a>
+      <a href="experiences.html">Expériences</a>
+      <a href="formation.html">Formation</a>
+      <a href="projets_realises.html">Projets</a>
+      <a href="recommandations.html" class="active">Recommandations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <a href="PDF/recommandation-hanalytics.pdf"
-       target="_blank"
-       class="recommendation-btn">
-       Voir la recommandation
-    </a>
+  <main class="recommendations-main">
 
-  </article>
+    <section class="recommendations-intro reveal">
+      <span class="badge">Recommandations</span>
 
-  <!-- ORANGE -->
-  <article class="recommendation-card">
+      <h2>Recommandations professionnelles & académiques</h2>
 
-    <div class="recommendation-top">
-      <img src="images/orange.png" alt="Orange">
+      <p>
+        Quelques recommandations issues de mon parcours professionnel et académique,
+        en lien avec l’analyse de données, la Business Intelligence et le reporting.
+      </p>
+    </section>
 
-      <div>
-        <h3>Orange</h3>
-        <h4>Analyse & Contrôle Marketing</h4>
-      </div>
-    </div>
+    <section class="recommendations-grid reveal">
 
-    <p>
-      Expérience orientée contrôle de campagnes publicitaires,
-      suivi des données marketing et fiabilisation des KPI.
-    </p>
+      <article class="recommendation-card">
+        <div class="recommendation-top">
+          <img src="images/hanalytics.jpg" alt="Hanalytics">
 
-    <a href="PDF/recommandation-orange.pdf"
-       target="_blank"
-       class="recommendation-btn">
-       Voir la recommandation
-    </a>
+          <div>
+            <h3>Hanalytics</h3>
+            <h4>Data & Business Intelligence</h4>
+          </div>
+        </div>
 
-  </article>
+        <p>
+          Recommandation professionnelle autour des missions en analyse de données,
+          reporting automatisé, BigQuery, Looker Studio et suivi des KPI business.
+        </p>
 
-  <!-- ALIOUNE -->
-  <article class="recommendation-card">
+        <a href="PDF/recommandation-hanalytics.pdf" target="_blank" class="recommendation-btn">
+          Voir la recommandation
+        </a>
+      </article>
 
-    <div class="recommendation-top">
-      <img src="images/alioune.png" alt="Alioune">
+      <article class="recommendation-card">
+        <div class="recommendation-top">
+          <img src="images/orange.png" alt="Orange">
 
-      <div>
-        <h3>Dr. Alioune Nar SAMBE</h3>
-        <h4>Professeur & Consultant IA</h4>
-      </div>
-    </div>
+          <div>
+            <h3>Orange</h3>
+            <h4>Analyse & Contrôle Marketing</h4>
+          </div>
+        </div>
 
-    <p>
-      Recommandation académique mettant en avant les compétences
-      en Data Science, Business Intelligence et analyse de données.
-    </p>
+        <p>
+          Expérience orientée contrôle de campagnes publicitaires,
+          suivi des données marketing et fiabilisation des KPI.
+        </p>
 
-    <a href="PDF/recommandation-alioune.pdf"
-       target="_blank"
-       class="recommendation-btn">
-       Voir la recommandation
-    </a>
+        <a href="PDF/recommandation-orange.pdf" target="_blank" class="recommendation-btn">
+          Voir la recommandation
+        </a>
+      </article>
 
-  </article>
+      <article class="recommendation-card">
+        <div class="recommendation-top">
+          <img src="images/alioune.png" alt="Alioune">
 
-</section>
+          <div>
+            <h3>Dr. Alioune Nar SAMBE</h3>
+            <h4>Professeur & Consultant IA</h4>
+          </div>
+        </div>
+
+        <p>
+          Recommandation académique mettant en avant les compétences en Data Science,
+          Business Intelligence et analyse de données.
+        </p>
+
+        <a href="PDF/recommandation-alioune.pdf" target="_blank" class="recommendation-btn">
+          Voir la recommandation
+        </a>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Kadissetou KOITA — Portfolio professionnel</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
