@@ -723,12 +723,12 @@ body {
 .competences-page .competences-main {
   flex: 1;
   width: 100%;
-  padding: 70px 8% 90px;
+  padding: 60px 8% 80px;
 }
 
 .competences-page .competences-intro {
   max-width: 850px;
-  margin: 0 auto 45px;
+  margin: 0 auto 38px;
   text-align: center;
 }
 
@@ -736,24 +736,25 @@ body {
   color: #cbd5e1;
   font-size: 1.05rem;
   line-height: 1.8;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .competences-page .competences-grid {
-  max-width: 1150px;
+  max-width: 1100px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  gap: 24px;
 }
 
 .competences-page .competence-card {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 24px;
-  padding: 30px 32px;
+  padding: 24px 26px;
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
   transition: all 0.35s ease;
+  min-height: 260px;
 }
 
 .competences-page .competence-card:hover {
@@ -763,19 +764,19 @@ body {
 }
 
 .competences-page .competence-icon {
-  font-size: 2rem;
-  margin-bottom: 14px;
+  display: none;
 }
 
 .competences-page .competence-card h3 {
   color: #ffffff;
   font-size: 1.35rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .competences-page .competence-card p {
   color: #cbd5e1;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
+  line-height: 1.7;
 }
 
 .competences-page .competence-tags {
@@ -807,6 +808,7 @@ body {
 
   .competences-page .competence-card {
     padding: 22px;
+    min-height: auto;
   }
 
   .competences-page .competence-card h3 {
