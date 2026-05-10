@@ -711,3 +711,105 @@ body {
     font-size: 1.15rem;
   }
 }
+
+/* ================= COMPETENCES PAGE ================= */
+
+.competences-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.competences-page .competences-main {
+  flex: 1;
+  width: 100%;
+  padding: 70px 8% 90px;
+}
+
+.competences-page .competences-intro {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.competences-page .competences-intro p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-top: 18px;
+}
+
+.competences-page .competences-grid {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.competences-page .competence-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 24px;
+  padding: 30px 32px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+  transition: all 0.35s ease;
+}
+
+.competences-page .competence-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(236, 72, 153, 0.35);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.competences-page .competence-icon {
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+
+.competences-page .competence-card h3 {
+  color: #ffffff;
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.competences-page .competence-card p {
+  color: #cbd5e1;
+  margin-bottom: 18px;
+}
+
+.competences-page .competence-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.competences-page .competence-tags span {
+  background: rgba(139, 92, 246, 0.14);
+  color: #e9d5ff;
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  padding: 8px 13px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .competences-page .competences-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .competences-page .competences-main {
+    padding: 40px 5% 70px;
+  }
+
+  .competences-page .competence-card {
+    padding: 22px;
+  }
+
+  .competences-page .competence-card h3 {
+    font-size: 1.15rem;
+  }
+}
