@@ -1284,3 +1284,111 @@ body.light-mode .project-category,
 body.light-mode .project-year {
   color: #8b5cf6;
 }
+
+/* ================= MOBILE FIX GLOBAL ================= */
+
+@media (max-width: 700px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    padding: 30px 8%;
+    align-items: flex-start;
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .logo p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 18px 24px;
+    margin-top: 20px;
+  }
+
+  .navbar a,
+  .theme-toggle {
+    width: fit-content;
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  .hero {
+    display: block;
+    min-height: auto;
+    padding: 45px 8%;
+  }
+
+  .hero-text h2 {
+    font-size: 2.45rem;
+    line-height: 1.15;
+    word-break: normal;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    margin-bottom: 30px;
+  }
+
+  .hero-card {
+    margin-top: 30px;
+  }
+
+  .glass-card {
+    max-width: 100%;
+  }
+
+  .about-grid,
+  .cards-grid,
+  .competences-page .competences-grid,
+  .projects-page .projects-grid,
+  .recommendations-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .section,
+  .competences-page .competences-main,
+  .projects-page .projects-main,
+  .experiences-page .experiences-main,
+  .formation-page .formation-main,
+  .recommendations-main {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .about-card,
+  .info-card,
+  .site-box,
+  .competence-card,
+  .project-card,
+  .experience-card,
+  .formation-card,
+  .recommendation-card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-card p,
+  .about-card li,
+  .info-card p,
+  .competence-card p,
+  .project-card p,
+  .experience-card li,
+  .recommendation-card p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
